@@ -1,0 +1,210 @@
+:root {
+  --vaalea: #F8EED9;
+  --tumma: #4A1F0D;
+  --hover: #d7cbc6;
+}
+
+html {
+  background-color: rgb(75, 15, 15);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-image: radial-gradient(var(--vaalea), var(--tumma));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.7;
+  color: var(--tumma);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  background-color: var(--vaalea);
+}
+
+.logo {
+  display: block;
+  height: 60px;
+  width: auto;
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.valikko {
+  display: block;
+  padding: 10px 10px;
+  font-size: 15pt;
+  color: black;
+  text-decoration: none;
+}
+
+.valikko:hover {
+  background-color: var(--hover);
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  background-color: rgba(248, 238, 217, 0.92);
+ 
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  margin: 30px auto;
+  width: fit-content;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.etusivu_kuva {
+  display: block;
+  margin: 0 auto;
+  height: 350px;
+  max-width: 100%;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+
+}
+
+
+.product-logo {
+  display: block;
+  margin: 20px auto 0;
+  height: 350px;
+  max-width: 90%;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+main p {
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+}
+
+.keskitä {
+  text-align: center;
+  background-color: rgba(248, 238, 217, 0.92);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  margin: 30px auto;
+}
+
+.teksti {
+  background-color: rgba(248, 238, 217, 0.92);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  margin: 30px auto;
+}
+
+.contact {
+  padding: 10px 20px;
+}
+
+h1.contact {
+  width: fit-content;
+  margin: 30px 20px 10px 20px;  
+  padding: 10px 30px;
+  text-align: left;
+  background-color: rgba(248, 238, 217, 0.92);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.contact p{
+  display: block;
+  width: auto;
+  margin: 0 20px;
+  padding: 4px 0;
+  color: black;
+  font-weight: bold;
+}
+
+/* Kapea näyttö */
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav ul {
+    gap: 10px;
+  }
+
+  main p {
+    width: 90%;
+    box-sizing: border-box;
+  }
+}
+
+.kartta {
+  display: block;
+  left: 45%;
+  bottom: 270px;
+  position: relative;
+  max-width: 100%;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.kortti_alue {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.kortti {
+  width: 250px;
+  background-color: var(--vaalea);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  padding: 15px;
+  text-align: center;
+}
+
+.kortti img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.kortti h2 {
+  text-align: left;
+  font-family: 'Playfair Display', serif;
+  font-weight: lighter;
+}
+
+.kortti h3 {
+  font-style: italic;
+  margin-top: 0;
+  text-align: left;
+  font-weight: 100;
+  font-size: medium;
+}
+
+  .kortti p {
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0; 
+}
+
+.kontaktit {
+  display:  block;
+  align-content: center;
+  justify-content: center;
+  height:  120vh;
+}
+
+
+
