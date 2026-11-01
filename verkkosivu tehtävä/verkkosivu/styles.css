@@ -32,7 +32,7 @@ header {
 
 .logo {
   display: block;
-  height: 60px;
+  height: 50%;
   width: auto;
 }
 
@@ -191,6 +191,7 @@ h1.contact {
   text-align: left;
   font-weight: 100;
   font-size: medium;
+  font-family: 'Playfair Display', serif;
 }
 
   .kortti p {
